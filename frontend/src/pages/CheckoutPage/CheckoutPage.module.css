@@ -1,0 +1,343 @@
+.pageShell {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem 0 1.25rem;
+}
+
+.kicker {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--primary, #69f6b8);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 38rem;
+  margin: 0.65rem 0 0;
+  color: var(--on-surface-variant, #adaaaa);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.9fr);
+  gap: 1.1rem;
+  align-items: start;
+}
+
+.mainColumn,
+.sideColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+}
+
+.panel,
+.summaryPanel {
+  background: var(--surface-container-low, #131313);
+  border-radius: 0.75rem;
+  padding: 1.15rem;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.28);
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.panelHeader h2 {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.textLink {
+  color: var(--primary, #69f6b8);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.addressGrid,
+.paymentGrid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.addressCard,
+.paymentCard {
+  width: 100%;
+  background: var(--surface-container, #1a1a1a);
+  border: 1px solid var(--outline-variant, #484847);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  color: inherit;
+  text-align: left;
+  transition: all 0.22s ease;
+}
+
+.addressCard:hover,
+.paymentCard:hover {
+  background: var(--surface-container-high, #20201f);
+  transform: translateY(-2px);
+}
+
+.addressCardActive,
+.paymentCardActive {
+  border-color: rgba(105, 246, 184, 0.7);
+  box-shadow: 0 0 0 1px rgba(105, 246, 184, 0.18) inset;
+}
+
+.addressTopRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.paymentCard {
+  display: grid;
+  grid-template-columns: 1.7rem 1fr;
+  align-items: center;
+  text-align: left;
+}
+
+.paymentCard > span {
+  font-size: 1.05rem;
+  line-height: 1;
+  justify-self: start;
+}
+
+.paymentCard > div {
+  min-width: 0;
+}
+
+.paymentCard h3,
+.paymentCard p {
+  text-align: left;
+}
+
+.addressCard h3,
+.paymentCard h3,
+.summaryItem h3 {
+  margin: 0;
+  font-size: 0.92rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.addressCard p,
+.paymentCard p,
+.addressPreview p,
+.summaryItem p {
+  margin: 0.35rem 0 0;
+  color: var(--on-surface-variant, #adaaaa);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.addressCard p,
+.summaryItem p,
+.addressPreview p {
+  text-align: left;
+}
+
+.badge {
+  display: inline-flex;
+  margin-top: 0.35rem;
+  background: rgba(105, 246, 184, 0.14);
+  color: var(--primary, #69f6b8);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.notes {
+  width: 100%;
+  background: var(--surface-container-highest, #262626);
+  border: 1px solid var(--outline-variant, #484847);
+  color: var(--on-surface, #ffffff);
+  border-radius: 0.5rem;
+  padding: 0.85rem;
+  resize: vertical;
+  min-height: 96px;
+}
+
+.notes::placeholder {
+  color: var(--on-surface-variant, #adaaaa);
+}
+
+.summaryList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 0;
+}
+
+.summaryItem + .summaryItem {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.summaryItem span {
+  font-weight: 700;
+  color: var(--on-surface, #ffffff);
+  white-space: nowrap;
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.totals div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--on-surface-variant, #adaaaa);
+}
+
+.totals strong,
+.totalRow strong {
+  color: var(--on-surface, #ffffff);
+  font-size: 0.95rem;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.65rem;
+  margin-top: 0.1rem;
+  color: var(--on-surface, #ffffff) !important;
+}
+
+.addressPreview {
+  margin-top: 1rem;
+}
+
+.addressPreview :global(.leaflet-container) {
+  border-radius: 0.5rem;
+}
+
+.placeOrderButton,
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.placeOrderButton,
+.primaryButton {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border: 0;
+  background: linear-gradient(135deg, var(--primary, #69f6b8), var(--primary-container, #06b77f));
+  color: var(--on-primary-container, #002919);
+}
+
+.secondaryButton {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--outline-variant, #484847);
+  color: var(--on-surface, #ffffff);
+  background: var(--surface-container, #1a1a1a);
+}
+
+.placeOrderButton:hover,
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-1px);
+}
+
+.emptyState {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.emptyState :global(.material-symbols-outlined) {
+  font-size: 4.5rem;
+  color: rgba(255, 255, 255, 0.22);
+}
+
+.emptyState h1 {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+}
+
+.emptyState p {
+  margin: 0;
+  color: var(--on-surface-variant, #adaaaa);
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageShell {
+    padding-inline: 0.75rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .panel,
+  .summaryPanel {
+    padding: 1rem;
+  }
+}
