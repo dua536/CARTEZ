@@ -1,0 +1,5 @@
+.glassPanel {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(72, 72, 71, 0.2);
+}
