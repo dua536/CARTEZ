@@ -1,0 +1,47 @@
+
+{
+  "addresses": [
+    {
+      "id": 1,
+      "label": "Home",
+      "street_address": "Block 2, Clifton",
+      "city": "Karachi",
+      "province": "Sindh",
+      "postal_code": "75600",
+      "phone_number": "+923001234567",
+      "delivery_instructions": "Ring the doorbell twice",
+      "country": "Pakistan",
+      "latitude": 24.7844,
+      "longitude": 67.0260,
+      "is_default": 1
+    },
+    {
+      "id": 2,
+      "label": "Work",
+      "street_address": "Business District, DHA Phase 5",
+      "city": "Karachi",
+      "province": "Sindh",
+      "postal_code": "75500",
+      "phone_number": "+923009876543",
+      "delivery_instructions": "Ask for reception at main desk",
+      "country": "Pakistan",
+      "latitude": 24.8038,
+      "longitude": 67.0532,
+      "is_default": 0
+    },
+    {
+      "id": 3,
+      "label": "Studio",
+      "street_address": "Tariq Road, Saddar",
+      "city": "Karachi",
+      "province": "Sindh",
+      "postal_code": "74400",
+      "phone_number": "+923002345678",
+      "delivery_instructions": "Leave at main entrance",
+      "country": "Pakistan",
+      "latitude": 24.8509,
+      "longitude": 67.0152,
+      "is_default": 0
+    }
+  ]
+}
